@@ -183,7 +183,7 @@ export default function Home() {
       <footer className="border-t border-white/10 py-8 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-400">
-            © 2025 Special Dance Tv UK. All rights reserved.
+            © 2025 Special Dance Tv. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a

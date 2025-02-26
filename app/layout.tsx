@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Special Dance Tv UK",
+  title: "Special Dance Tv",
   description: "Discover the world of Social Dance",
 };
 
