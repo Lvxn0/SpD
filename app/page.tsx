@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Film, Play, Camera, Instagram, Youtube, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
+import ModalForm from "@/components/ModalForm";
 
 const featuredVideos = [
   {
@@ -170,14 +171,11 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Let's Bring Your Dance to Life
           </h2>
-          <p className="text-gray-400 mb-8">Available for Bookings | UK only</p>
-          <Button
-            id="contact"
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-gray-400 transition duration-300 rounded-[20px] outline-none"
-          >
-            Get in Touch
-          </Button>
+          <p id="contact" className="text-gray-400 mb-8">
+            Available for Bookings
+          </p>
+
+          <ModalForm />
         </div>
       </section>
 
