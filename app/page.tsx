@@ -29,7 +29,7 @@ export default function Home() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=2000&q=80')",
+              "url('https://images.unsplash.com/photo-1604954055722-7f80571fbfc3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHx2aWRlb3MlMkMlMjBzYWxzYXxlbnwwfHx8fDE2OTM4ODI4MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=2036&h=1168')",
             backgroundSize: "cover",
             backgroundPosition: "center 38%",
           }}
@@ -44,15 +44,15 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="mt-[20px] text-5xl md:text-7xl font-bold mb-6 text-white">
-              Your Dance, Our Lens
+              Discover the World of Social Dance
             </h1>
             <p className="text-xl md:text-4xl text-gray-200 mb-8">
-              Perfectly Framed
+              Capturing the Rhythm and Energy of Latin Dance Festivals
             </p>
             <a href="#contact">
               <Button
                 size="lg"
-                className="mt-[50px] bg-white text-black hover:bg-gray-400 transition duration-300 rounded-[20px] outline-none"
+                className="bg-white text-black hover:bg-gray-400 transition duration-300 rounded-[20px] outline-none"
               >
                 Get in Touch
               </Button>
@@ -92,6 +92,100 @@ export default function Home() {
               <Facebook className="h-8 w-8" />
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Welcome */}
+      <section className="py-20 px-4 md:px-8 bg-black/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-start">
+            <div>
+              <img
+                className="max-w-xl"
+                src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2aWRlb3MlMkMlMjBkYW5jZXxlbnwwfHx8fDE2OTM4ODI4MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=861&h=602"
+              />
+            </div>
+            <div className="flex flex-col justify-start max-w-2xl">
+              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+                First of All
+              </h1>
+              <div>
+                <h1 className="text-3xl font-bold mb-3 text-white">
+                  Welcome to Special Dance Tv
+                </h1>
+                <p className="text-xl text-gray-200">
+                  Experience the energy and excitement of salsa, bachata, cha
+                  cha, and kizomba dance festivals through our high-quality
+                  video recordings. We also offer aerial drone videos and photos
+                  to capture the festival atmosphere from unique perspectives.
+                  Join us as we bring the world of dance to your screen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-start">
+            <div className="flex flex-col justify-start max-w-2xl">
+              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+                Not to Mention{" "}
+              </h1>
+              <div>
+                <h1 className="text-3xl font-bold mb-3 text-white">
+                  Capturing the Magic of Latin Dance Festivals{" "}
+                </h1>
+                <p className="text-xl text-gray-200">
+                  Immerse yourself in the vibrant world of salsa, bachata, cha
+                  cha, and kizomba dance through our expertly recorded videos.
+                  Our team captures the best moments at Latin dance festivals,
+                  showcasing the talent and excitement of dancers from around
+                  the world. With aerial drone footage and stunning photography,
+                  we bring the festival experience to life. From festival
+                  promotions to special events, we create captivating videos
+                  that celebrate the joy of dance.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                className="max-w-xl"
+                src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=861&h=602"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-4 md:px-8 bg-black/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-start">
+            <div>
+              <img
+                className="max-w-xl"
+                src="https://images.unsplash.com/photo-1574446615002-35ec8a8f0da2?auto=format&fit=crop&w=861&h=699"
+              />
+            </div>
+            <div className="flex flex-col justify-start max-w-2xl">
+              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+                And Let's Not Forget{" "}
+              </h1>
+              <div>
+                <h1 className="text-3xl font-bold mb-3 text-white">
+                  Unforgettable Memories for Every Occasion{" "}
+                </h1>
+                <p className="text-xl text-gray-200">
+                  Make your weddings, baptisms, and other special events truly
+                  memorable with our fun intro videos. We specialize in creating
+                  captivating and personalized videos that capture the essence
+                  of your celebration. Whether you want to relive the joy of
+                  your wedding day or create a unique keepsake for a baptism,
+                  our team will bring your vision to life. Let us add a touch of
+                  magic to your special moments.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
