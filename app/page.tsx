@@ -44,10 +44,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="mt-[20px] text-5xl md:text-7xl font-bold mb-6 text-white">
+            <h1 className="mt-[20px] text-3xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 text-white px-4">
               Discover the World of Social Dance
             </h1>
-            <p className="text-xl md:text-4xl text-gray-200 mb-8">
+            <p className="text-lg sm:text-xl md:text-4xl text-gray-200 mb-6 md:mb-8 px-4">
               Capturing the Rhythm and Energy of Latin Dance Festivals
             </p>
             <a href="#contact">
@@ -60,24 +60,24 @@ export default function Home() {
       </section>
 
       {/* Welcome */}
-      <section className="py-20 px-4 md:px-8 bg-black/30">
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-black/30">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-start">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            <div className="w-full md:w-1/2">
               <img
-                className="max-w-xl rounded-lg"
+                className="w-full rounded-lg"
                 src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2aWRlb3MlMkMlMjBkYW5jZXxlbnwwfHx8fDE2OTM4ODI4MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=861&h=602"
               />
             </div>
-            <div className="flex flex-col justify-start max-w-2xl">
-              <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
+            <div className="flex flex-col justify-start w-full md:w-1/2">
+              <h1 className="text-xl font-bold mt-0 md:mt-5 mb-8 text-gray-500">
                 First of All
               </h1>
               <div>
-                <h1 className="text-3xl font-bold mb-3 text-white">
+                <h1 className="text-2xl md:text-3xl font-bold mb-3 text-white">
                   Welcome to Special Dance Tv
                 </h1>
-                <p className="text-xl text-gray-200">
+                <p className="text-lg md:text-xl text-gray-200">
                   Experience the energy and excitement of salsa, bachata, cha
                   cha, and kizomba dance festivals through our high-quality
                   video recordings. We also offer aerial drone videos and photos
@@ -89,18 +89,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-4 md:px-8">
+
+      <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-start">
-            <div className="flex flex-col justify-start max-w-2xl">
-              <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
-                Not to Mention{" "}
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            <div className="flex flex-col justify-start w-full md:w-1/2 order-2 md:order-1">
+              <h1 className="text-xl font-bold mt-0 md:mt-5 mb-8 text-gray-500">
+                Not to Mention
               </h1>
               <div>
-                <h1 className="text-3xl font-bold mb-3 text-white">
-                  Capturing the Magic of Latin Dance Festivals{" "}
+                <h1 className="text-2xl md:text-3xl font-bold mb-3 text-white">
+                  Capturing the Magic of Latin Dance Festivals
                 </h1>
-                <p className="text-xl text-gray-200">
+                <p className="text-lg md:text-xl text-gray-200">
                   Immerse yourself in the vibrant world of salsa, bachata, cha
                   cha, and kizomba dance through our expertly recorded videos.
                   Our team captures the best moments at Latin dance festivals,
@@ -112,25 +113,26 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="w-full md:w-1/2 order-1 md:order-2">
               <img
-                className="max-w-xl rounded-lg"
+                className="w-full rounded-lg"
                 src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=861&h=602"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-20 px-4 md:px-8 bg-black/30">
+
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-black/30">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-start">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            <div className="w-full md:w-1/2">
               <img
-                className="max-w-xl rounded-lg"
+                className="w-full rounded-lg"
                 src="https://images.unsplash.com/photo-1574446615002-35ec8a8f0da2?auto=format&fit=crop&w=861&h=699"
               />
             </div>
-            <div className="flex flex-col justify-start max-w-2xl">
+            <div className="flex flex-col justify-start w-full md:w-1/2">
               <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
                 And Let's Not Forget{" "}
               </h1>
@@ -154,12 +156,12 @@ export default function Home() {
       </section>
 
       {/* Featured Work */}
-      <section className="py-20 px-4 md:px-8">
+      <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
             Featured Work
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {featuredVideos.map((video, index) => (
               <div
                 key={index}
@@ -187,12 +189,12 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="bg-black/30 py-20 px-4 md:px-8">
+      <section className="bg-black/30 py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
             Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
             {[
               {
                 icon: Camera,
@@ -238,12 +240,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-8 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-400">
+      <footer className="border-t border-white/10 py-6 md:py-8 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-400 text-center md:text-left">
             © 2025 Special Dance Tv. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-4 md:space-x-6">
             <a
               href="https://www.instagram.com/specialdancetv/"
               target="_blank"
