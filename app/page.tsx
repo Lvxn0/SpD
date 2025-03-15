@@ -5,6 +5,7 @@ import { Film, Play, Camera, Instagram, Youtube, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 import ModalForm from "@/components/ModalForm";
 import Socials from "@/components/Socials";
+import Footer from "@/components/Footer";
 
 const featuredVideos = [
   {
@@ -239,40 +240,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 py-6 md:py-8 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400 text-center md:text-left">
-            © 2025 Special Dance Tv. All rights reserved.
-          </p>
-          <div className="flex space-x-4 md:space-x-6">
-            <a
-              href="https://www.instagram.com/specialdancetv/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/@specialdancetv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              YouTube
-            </a>
-            <a
-              href="https://www.facebook.com/socialdancetvuk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Facebook
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

@@ -15,23 +15,28 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 bg-gradient-to-b from-black/90 to-black/70 text-white py-3 px-4 md:px-8 backdrop-blur-sm shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="container mx-auto flex justify-between items-center relative">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/favicon.ico"
+            src="/Logo.png"
             alt="Logo"
-            width={32}
-            height={32}
-            className="w-8 h-8"
+            width={64}
+            height={64}
+            className="w-16 h-16 -my-4"
           />
           <h1 className="hidden md:block text-xl font-bold tracking-wider">
             Special Dance Tv
           </h1>
         </Link>
 
+        {/* Mobile title */}
+        <h1 className="md:hidden absolute left-1/2 transform -translate-x-1/2 text-lg font-bold">
+          Special Dance Tv
+        </h1>
+
         {/* Mobile menu button */}
         <button
-          className="md:hidden"
+          className="md:hidden z-10"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
