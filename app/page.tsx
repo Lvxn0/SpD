@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Film, Play, Camera, Instagram, Youtube, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 import ModalForm from "@/components/ModalForm";
+import Socials from "@/components/socials";
 
 const featuredVideos = [
   {
@@ -60,39 +61,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="absolute bottom-8 flex space-x-8 text-white z-10 animate__animated animate__fadeIn animate__delay-1s">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex space-x-8"
-          >
-            <a
-              href="https://www.instagram.com/specialdancetv/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300 transition duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-1s"
-            >
-              <Instagram className="h-8 w-8" />
-            </a>
-            <a
-              href="https://www.youtube.com/@specialdancetv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300 transition duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-2s"
-            >
-              <Youtube className="h-8 w-8" />
-            </a>
-            <a
-              href="https://www.facebook.com/socialdancetvuk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300 transition duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-3s"
-            >
-              <Facebook className="h-8 w-8" />
-            </a>
-          </motion.div>
-        </div>
+        <Socials />
       </section>
 
       {/* Welcome */}
@@ -101,12 +70,12 @@ export default function Home() {
           <div className="flex justify-between items-start">
             <div>
               <img
-                className="max-w-xl"
+                className="max-w-xl rounded-lg"
                 src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHx2aWRlb3MlMkMlMjBkYW5jZXxlbnwwfHx8fDE2OTM4ODI4MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=861&h=602"
               />
             </div>
             <div className="flex flex-col justify-start max-w-2xl">
-              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+              <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
                 First of All
               </h1>
               <div>
@@ -129,7 +98,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start">
             <div className="flex flex-col justify-start max-w-2xl">
-              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+              <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
                 Not to Mention{" "}
               </h1>
               <div>
@@ -150,7 +119,7 @@ export default function Home() {
             </div>
             <div>
               <img
-                className="max-w-xl"
+                className="max-w-xl rounded-lg"
                 src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=861&h=602"
               />
             </div>
@@ -162,12 +131,12 @@ export default function Home() {
           <div className="flex justify-between items-start">
             <div>
               <img
-                className="max-w-xl"
+                className="max-w-xl rounded-lg"
                 src="https://images.unsplash.com/photo-1574446615002-35ec8a8f0da2?auto=format&fit=crop&w=861&h=699"
               />
             </div>
             <div className="flex flex-col justify-start max-w-2xl">
-              <h1 className="text-xl font-bold mt-5 mb-10 text-gray-500">
+              <h1 className="text-xl font-bold mt-5 mb-8 text-gray-500">
                 And Let's Not Forget{" "}
               </h1>
               <div>

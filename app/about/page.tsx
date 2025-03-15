@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Youtube, Facebook, Film, Camera } from "lucide-react";
 import ModalForm from "@/components/ModalForm";
+import Socials from "@/components/socials";
 
 export default function About() {
   return (
@@ -35,6 +36,7 @@ export default function About() {
             </p>
           </motion.div>
         </div>
+        <Socials />
       </section>
 
       {/* Our Story */}
