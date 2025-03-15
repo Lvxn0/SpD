@@ -51,12 +51,7 @@ export default function Home() {
               Capturing the Rhythm and Energy of Latin Dance Festivals
             </p>
             <a href="#contact">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-gray-400 transition duration-300 rounded-[20px] outline-none"
-              >
-                Get in Touch
-              </Button>
+              <ModalForm />
             </a>
           </motion.div>
         </div>
