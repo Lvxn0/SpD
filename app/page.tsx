@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Film, Play, Camera, Instagram, Youtube, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 import ModalForm from "@/components/ModalForm";
-import Socials from "@/components/socials";
+import Socials from "@/components/Socials";
 
 const featuredVideos = [
   {
@@ -32,7 +32,7 @@ export default function Home() {
             backgroundImage:
               "url('https://images.unsplash.com/photo-1604954055722-7f80571fbfc3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHx2aWRlb3MlMkMlMjBzYWxzYXxlbnwwfHx8fDE2OTM4ODI4MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=2036&h=1168')",
             backgroundSize: "cover",
-            backgroundPosition: "center 38%",
+            backgroundPosition: "center 20%",
           }}
         >
           <div className="absolute inset-0 bg-black/60" />

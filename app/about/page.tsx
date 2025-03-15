@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Youtube, Facebook, Film, Camera } from "lucide-react";
 import ModalForm from "@/components/ModalForm";
-import Socials from "@/components/socials";
+import Socials from "@/components/Socials";
 
 export default function About() {
   return (
