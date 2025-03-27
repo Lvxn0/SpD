@@ -10,14 +10,12 @@ const ModalForm: React.FC = () => {
     email: "",
     message: "",
   });
-  const [isLoading, setIsLoading] = useState(false); // Loading state
-  const [error, setError] = useState(""); // Error state
-  const [successMessage, setSuccessMessage] = useState(""); // Success message
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  // Modal toggle
   const toggleModal = () => setIsOpen(!isOpen);
 
-  // Form data change handler
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -28,7 +26,6 @@ const ModalForm: React.FC = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
@@ -36,7 +33,6 @@ const ModalForm: React.FC = () => {
     setSuccessMessage("");
 
     try {
-      // Log the form data being sent to EmailJS
       console.log("Form Data being sent to EmailJS:", formData);
 
       const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -48,7 +44,6 @@ const ModalForm: React.FC = () => {
         return;
       }
 
-      // Sending the email via EmailJS
       const result = await emailjs.send(
         serviceId,
         templateId,
@@ -56,14 +51,12 @@ const ModalForm: React.FC = () => {
         userId
       );
 
-      // Check if EmailJS response is OK
       if (result.status === 200) {
         setSuccessMessage("Message sent successfully!");
       } else {
         setError(`Failed to send message: ${result.text}`);
       }
 
-      // Clear form data and close modal
       setFormData({ name: "", email: "", message: "" });
       toggleModal();
     } catch (error: any) {
@@ -76,7 +69,6 @@ const ModalForm: React.FC = () => {
 
   return (
     <>
-      {/* Button to open the modal */}
       <Button
         onClick={toggleModal}
         size="lg"
@@ -85,10 +77,8 @@ const ModalForm: React.FC = () => {
         Get in Touch
       </Button>
 
-      {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex justify-center items-center">
-          {/* Animate Modal */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -96,7 +86,6 @@ const ModalForm: React.FC = () => {
             transition={{ duration: 0.2 }}
             className="bg-[#151515] p-8 rounded-lg max-w-md w-full shadow-lg relative"
           >
-            {/* Close Button */}
             <button
               type="button"
               onClick={toggleModal}
@@ -106,14 +95,11 @@ const ModalForm: React.FC = () => {
               ×
             </button>
 
-            {/* Modal Title */}
             <h2 className="text-2xl font-semibold text-white mb-6">
               Message Me!
             </h2>
 
-            {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name Input */}
               <div className="flex flex-col space-y-2">
                 <input
                   type="text"
@@ -127,7 +113,6 @@ const ModalForm: React.FC = () => {
                 />
               </div>
 
-              {/* Email Input */}
               <div className="flex flex-col space-y-2">
                 <input
                   type="email"
@@ -141,7 +126,6 @@ const ModalForm: React.FC = () => {
                 />
               </div>
 
-              {/* Message Textarea */}
               <div className="flex flex-col space-y-2">
                 <textarea
                   id="message"
@@ -155,13 +139,11 @@ const ModalForm: React.FC = () => {
                 />
               </div>
 
-              {/* Display error or success message */}
               {error && <div className="text-red-500 text-sm">{error}</div>}
               {successMessage && (
                 <div className="text-green-500 text-sm">{successMessage}</div>
               )}
 
-              {/* Submit Button */}
               <div className="flex justify-center space-x-4">
                 <Button
                   type="submit"
